@@ -1,0 +1,80 @@
+@import "../../common/colors.scss";
+
+.movie-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0;
+    color: $font-primary;
+    font-weight: 400;
+    min-height: 100%;
+    font-family: 'Ebrima', sans-serif;
+
+    .movie-rating {
+        padding-left: 3px;
+        margin-top: 20px;
+        color: $font-secondary;
+        display: flex;
+
+        span {
+            margin-right: 10px;
+            background-color: $secondary-color;
+            padding: 5px 10px 5px 10px;
+            border-radius: 6px;
+        }
+
+        .star-icon {
+            color: gold;
+            margin-right: 0;
+        }
+
+        .vote-icon {
+            color: palevioletred;
+            margin-right: 0;
+        }
+
+        .time-icon {
+            color: peachpuff;
+            margin-right: 0;
+        }
+
+        .year-icon {
+            color: rgb(171, 243, 171);
+            margin-right: 0;
+        }
+
+    }
+
+    .movie-title {
+        font-size: 36px;
+        font-weight: bold;
+        color: $font-primary;
+    }
+
+    .movie-plot {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        line-height: 1.8rem;
+    }
+
+    .movie-info>div span:first-child {
+        padding: 10px 0;
+        color: $font-primary;
+        font-weight: 600;
+        width: 100px;
+        display: inline-block;
+    }
+
+    .movie-info>div span {
+        color: $font-secondary;
+        padding-left: 30px;
+    }
+
+    .section-right {
+        min-height: 100%;
+        margin-left: 40px;
+
+        .poster {
+            min-height: 70vh;
+        }
+    }
+}
