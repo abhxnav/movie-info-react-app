@@ -4,10 +4,12 @@
     background: $secondary-color;
     cursor: pointer;
     transition: all 0.3s;
-    min-height: 450px;
+    min-height: 300px;
     height: 100%;
     margin: 10px;
     font-family: 'Ebrima', sans-serif;
+    border-radius: 10px;
+    margin-bottom: 50px;
 
     &:hover {
         transform: scale(1.05);
@@ -16,16 +18,30 @@
 }
 
 .card-top {
-    height: 300px;
-
     img {
+        border-radius: 10px;
         width: 100%;
-        height: 100%;
+        height: 300px;
+
+        &:hover {
+            filter: opacity(0.1);
+        }
     }
 }
 
 .card-bottom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
     padding: 20px;
+    // text-align: center;
+    
+    &:hover {
+        filter: opacity(0.1);
+    }
 }
 
 .card-info {
@@ -33,7 +49,7 @@
 
     h4 {
         font-size: 22px;
-        font-weight: 400;
+        font-weight: 600;
         margin-bottom: 10px;
     }
 }

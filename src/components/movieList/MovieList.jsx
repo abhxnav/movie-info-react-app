@@ -37,13 +37,17 @@ const MovieList = () => {
   return (
     <div className="movie-wrapper">
       <div className="movie-list">
-        <h2>Movies</h2>
+        <div className="heading-movies">
+          <h2>Movies</h2>
+        </div>
         <div className="movie-container">
           <Slider {...Settings}>{renderMovies}</Slider>
         </div>
       </div>
       <div className="show-list">
-        <h2>Shows</h2>
+        <div className="heading-shows">
+          <h2>Shows</h2>
+        </div>
         <div className="movie-container">
           <Slider {...Settings}>{renderShows}</Slider>
         </div>
